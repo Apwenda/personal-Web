@@ -1,0 +1,18 @@
+{
+  "books": [
+    {
+      "title": "Belajar JavaScript",
+      "author": "Deni Wenda",
+      "cover": "cover1.jpg",
+      "description": "Panduan lengkap belajar JavaScript dari dasar."
+    }
+  ],
+  "articles": [
+    {
+      "title": "Mengenal AI",
+      "author": "Fraeki Wenda",
+      "date": "2025-05-10",
+      "content": "Artikel ini membahas pengantar kecerdasan buatan."
+    }
+  ]
+}

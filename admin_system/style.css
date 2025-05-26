@@ -1,0 +1,104 @@
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body style */
+body {
+  background-color: #f4f4f4;
+  padding: 40px;
+  color: #333;
+}
+
+/* Container utama */
+h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #222;
+}
+
+form {
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.05);
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="password"],
+form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #fdfdfd;
+  transition: border 0.3s;
+  font-size: 14px;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #007acc;
+  outline: none;
+}
+
+form textarea {
+  resize: vertical;
+}
+
+button {
+  background-color: #007acc;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #005f99;
+}
+
+p a {
+  display: inline-block;
+  margin-top: 20px;
+  color: #007acc;
+  text-decoration: none;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+.success,
+.error {
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.success {
+  background-color: #dff0d8;
+  color: #3c763d;
+}
+
+.error {
+  background-color: #f2dede;
+  color: #a94442;
+}
