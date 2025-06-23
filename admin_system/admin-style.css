@@ -1,0 +1,129 @@
+/* Reset dasar */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    color: #333;
+}
+
+/* Container umum untuk form & konten */
+.container {
+    background: white;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 450px;
+}
+
+/* Heading */
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #222;
+    font-weight: 700;
+}
+
+/* Form style */
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #555;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="url"],
+form input[type="number"],
+form input[type="file"],
+form textarea {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 20px;
+    border: 1.8px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form input[type="password"]:focus,
+form input[type="url"]:focus,
+form input[type="number"]:focus,
+form input[type="file"]:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #74ebd5;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+/* Button */
+button {
+    width: 100%;
+    background-color: #4a90e2;
+    color: white;
+    padding: 12px 0;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #357abd;
+}
+
+/* Link list di dashboard */
+ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 25px;
+}
+
+ul li {
+    margin-bottom: 12px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #4a90e2;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+ul li a:hover {
+    color: #357abd;
+}
+
+/* Error message */
+.error {
+    color: #d93025;
+    margin-bottom: 15px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Paragraph untuk info */
+p.info {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 15px;
+}
+

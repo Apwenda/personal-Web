@@ -1,0 +1,374 @@
+/*Global styles*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* === Navbar === */
+.navbar {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.nav-link {
+  font-weight: 500;
+  margin-left: 10px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #e4b700;
+}
+
+/* === Hero === */
+/* === Hero Section === */
+.hero {
+  background: linear-gradient(-45deg, #0a3d62, #1e5aa8, #2a93d5, #0a3d62);
+  background-size: 400% 400%;
+  animation: gradientFlow 10s ease infinite;
+  color: #fff;
+  padding: 60px 20px;
+  border-radius: 0 0 20px 20px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px; /* Kurangi dari sebelumnya (jika terlalu jauh, bisa ubah ke 30px atau 20px) */
+}
+
+.hero-text {
+  max-width: 50%;
+  text-align: left;
+}
+
+.hero-img {
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 50%;
+  border: 5px solid transparent;
+  background: linear-gradient(145deg, #ffffff, #d1d9e6); /* efek cahaya */
+  box-shadow:
+    10px 10px 30px rgba(0, 0, 0, 0.3), /* bayangan utama */
+    -5px -5px 15px rgba(34, 189, 255, 0.2); /* sorotan */
+  transform: perspective(800px) rotateX(5deg) rotateY(-5deg); /* kesan sudut */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-img:hover {
+  transform: perspective(800px) rotateX(0deg) rotateY(0deg) scale(1.05); /* efek saat hover */
+  box-shadow:
+    15px 15px 40px rgba(0, 94, 255, 0.4),
+    -8px -8px 20px rgba(2, 119, 158, 0.1);
+}
+
+
+.hero h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.btn-read {
+  display: inline-block;
+  margin-top: 20px;
+  background: #d5aa00;
+  color: #000;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-weight: bold;
+  align-items: center;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+.btn-read:hover {
+  background: #ffffff;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+}
+
+.lead {
+  font-family: 'Lora', serif;
+  font-style: italic;
+  font-size: x-large;
+  color: #555;
+}
+
+/* Styling untuk pembungkus gambar agar rapi */
+.img-wrapper {
+  flex-shrink: 0;
+  max-width: 250px;
+}
+
+.profil-img {
+  max-width: 200px;
+}
+
+.tombol-bawah {
+  padding-top: 2rem;
+  border-top: 1px solid #ddd;
+}
+
+.tombol-bawah a {
+  white-space: nowrap;
+}
+
+/* Hover kuning khusus tombol daftar buku & artikel */
+.btn-kuning:hover {
+  background-color: #ffc107;
+  color: black;
+  border-color: #ffc107;
+}
+
+.img-kecil {
+  max-width: 150px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.section-card {
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s ease;
+}
+
+.section-card:hover {
+  transform: translateY(-2px);
+}
+
+.img-kecil {
+  max-width: 150px;
+}
+
+/* === Responsive - Mobile === */
+@media (max-width: 767px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-img {
+    width: 250px;
+    height: 250px;
+    order: 1; /* gambar di atas */
+  }
+
+  .hero-text {
+    max-width: 100%;
+    order: 2; /* teks di bawah */
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 30px 20px;
+  width: 90%;
+  max-width: 300px;
+  margin: 0 auto;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card-content {
+  text-decoration: none;
+  color: inherit;
+}
+
+.emoji {
+  font-size: 2.8rem;
+  margin-bottom: 12px;
+}
+
+.label {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.custom-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff;
+}
+.custom-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+.custom-card img {
+  width: 100%;
+  height: auto;
+  max-height: 230px;
+  object-fit: contain;
+  aspect-ratio: 4 / 3;
+  background-color: #f8f9fa;
+}
+
+.card-body {
+  padding: 1.25rem;
+}
+
+.card-img-top {
+  object-fit: contain;
+  width: 100%;
+  height: 230px; /* atur tinggi sesuai keinginan */
+  background-color: #f8f9fa; /* opsional: latar belakang putih/abu untuk gambar transparan */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* === Footer === */
+footer {
+  background-color: #0a3d62;
+  color: #fff;
+  text-align: center;
+  padding: 25px 0;
+  margin-top: 60px;
+  font-size: 0.9rem;
+}
+
+.footer-link {
+  background-color: #0a3d62;
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-link:hover {
+  color:#e4b700;
+}
+
+.media-social a {
+  color: #f8f9fa; /* warna awal ikon (text-light) */
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.media-social a:hover {
+  color: #ffc107; /* kuning saat hover */
+  transform: scale(1.2); /* sedikit membesar */
+}
+
+
+/* === Animations === */
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(40px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 0.3s;
+}
+
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* === Responsive === */
+@media (min-width: 768px) {
+  .card-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+}
+
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: #0d6efd; /* Bootstrap primary */
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.social-icons a:hover {
+  background-color: #efb801; /* Bootstrap primary */
+  color: #ffffff;
+  transform: translateY(-3px);
+}
+
+@media (max-width: 576px) {
+  .social-icons {
+    gap: 1rem;
+  }
+
+  .social-icons a {
+    width: 38px;
+    height: 38px;
+    font-size: 1rem;
+  }
+}
+
+   /* CSS untuk gambar media sosial */
+.social-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px; /* Atur ukuran yang lebih kecil sesuai kebutuhan */
+  border-radius: 8px;
+  box-shadow: 0 4px 4px rgba(0,0,0,0.1);
+  max-width: 100%;
+  height: auto;
+}
